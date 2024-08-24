@@ -12,6 +12,7 @@
 
 ## Documentación y Tutoriales
 
-[PythonDocs - Documentación de Python](https://github.com/MarceloMarot/PythonDocs)
+[Python Docs - Documentación de Python](https://github.com/MarceloMarot/python-docs)
 
 
+[MarkDown & MkDocs - Documentación y páginas estáticas](https://github.com/MarceloMarot/markdown-mkdocs/)
