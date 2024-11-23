@@ -1,0 +1,145 @@
+site_name: alejrot
+
+site_description: Mi sitio personal
+site_url: https://alejrot.github.io/alejrot/
+
+
+# Repositorio
+# repo_url: https://github.com/alejrot/alejrot
+# repo_name: alejrot
+# edit_uri: edit/master/docs/
+
+# copyright: Copyright &copy; 2024 Marcelo Marot Rosas
+
+
+
+
+theme:
+  name: material
+  language: es
+  font: false   # previene carga de Google Fonts
+
+  icon: 
+    # logo: fontawesome/solid/user-nurse
+    # iconos de avance y retroceso 
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    # Icono de repositorio    
+    repo: fontawesome/brands/github
+
+
+
+ # carpeta local con extras (opcional)
+  # custom_dir: overrides
+
+  palette:
+  # Palette toggle for light mode
+  # - media: "(prefers-color-scheme)"
+  #   toggle:
+  #     icon: material/lightbulb-auto
+  #     name: Modo automático
+      
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: grey
+    accent: grey
+    toggle:
+      icon: material/lightbulb 
+      name: Modo claro
+
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: grey
+    accent: grey
+    # accent: light green
+    toggle:
+      icon: material/lightbulb-outline
+      name: modo oscuro
+
+
+  features:
+
+    - content.tabs.link         # pestañas sincronizadas
+    - content.code.copy         # botón de copia 
+    - content.code.annotate     # botones de anotaciones emergentes
+    # carga instantánea (requiere site_url)
+    - navigation.instant
+    - navigation.instant.preview
+    - navigation.instant.progress   # progreso de carga (conexiones lentas)
+    - navigation.tracking
+    # pestañas de contenido
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.expand
+    - navigation.top  # boton emergente para volver al inicio  - aparece al intentar subir con el scroll
+    # Pie de pagina
+    - navigation.footer
+
+    # sugerencias de busqueda y remarcar resultados
+    - search.suggest
+    - search.highlight
+    - search.share    # boton compartir
+    # header
+    - header.autohide # ocultamiento automatico
+
+    - content.code.copy # copiad bloques de codigo
+    - content.code.annotate # anotaciones desplegables en código
+    
+    - content.tabs.link # pestañas interna solidarias
+    # header y anuncios
+    - header.autohide
+    - announce.dismiss
+
+    # acciones sobre repositorio
+    # - content.action.edit
+    - content.action.view
+
+    # tooltips
+    - content.tooltips
+
+
+
+# extra_css:
+#   # - stylesheets/extra.css
+#   - stylesheets/iconos.css
+
+
+
+plugins:
+ # Imagenes
+  - glightbox
+
+  # privacidad - hace copia local de contenidos remotos
+  # - privacy
+
+  # busqueda
+  - search
+
+
+
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true
