@@ -1,0 +1,11 @@
+# paquete básico
+# mkdocs-material 
+# paquete con soporte para manejo de imágenes
+mkdocs-material[imaging]
+
+# paquetes agregados
+mkdocs-git-revision-date-localized-plugin
+mkdocs-glightbox
+mkdocs-rss-plugin
+mkdocs-git-committers-plugin-2
+mkdocs-git-authors-plugin
