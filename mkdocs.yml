@@ -5,8 +5,8 @@ site_url: https://alejrot.github.io/alejrot/
 
 
 # Repositorio
-# repo_url: https://github.com/alejrot/alejrot
-# repo_name: alejrot
+repo_url: https://github.com/alejrot/alejrot
+repo_name: alejrot
 # edit_uri: edit/master/docs/
 
 # copyright: Copyright &copy; 2024 Marcelo Marot Rosas
@@ -38,22 +38,27 @@ theme:
   #   toggle:
   #     icon: material/lightbulb-auto
   #     name: Modo automático
-      
+
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/lightbulb-auto
+      name: modo automatico
+
+
   # Palette toggle for light mode
   - media: "(prefers-color-scheme: light)"
-    scheme: default
+    scheme: light
     primary: grey
     accent: grey
     toggle:
       icon: material/lightbulb 
-      name: Modo claro
+      name: modo claro
 
   # Palette toggle for dark mode
   - media: "(prefers-color-scheme: dark)"
     scheme: slate
     primary: grey
     accent: grey
-    # accent: light green
     toggle:
       icon: material/lightbulb-outline
       name: modo oscuro
@@ -95,12 +100,13 @@ theme:
 
     # acciones sobre repositorio
     # - content.action.edit
-    - content.action.view
+    # - content.action.view
 
     # tooltips
     - content.tooltips
 
-
+    - toc.follow      # ancla actual del sidebar siempre visible
+    - toc.integrate   # barra derecha integrada en izquierda
 
 # extra_css:
 #   # - stylesheets/extra.css

@@ -1,17 +1,15 @@
 
 services:
 
-  personal:
+  alejrot:
     build:  .
+    container_name: alejrot
     ports:
       - "${PORT:-8000}:8000"
-
     security_opt: 
       - label=disable
-
     volumes:
       - ./:/docs
-
     stdin_open: true
     tty: true
 
